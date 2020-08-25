@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#top {
+  height: 54px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+#upper {
+  height: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#upper #logo {
+  padding-right: 257px;
+}
+
+#search {
+  height: 28px;
+  width: 215px;
+  padding: 7px;
+}
+
+#right {
+  height: 22px;
+  width: 360px;
+}
+
+#right_container {
+  display: flex;
+  width: 222px;
+  height: 22px;
+  padding-left: 138px;
+  justify-content: space-between;
+}
+
+#upper #profile #picture {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}

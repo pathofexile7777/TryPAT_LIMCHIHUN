@@ -1,0 +1,64 @@
+<!-- 먼저 html만으로 템플릿을 만든 후 -->
+<!-- CSS를 통해 디자인 하고 -->
+<!-- JS를 넣어서 기능 구현 -->
+
+<!--  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- 아이콘 가져오는 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--윗 배너-->
+    <header>
+      <div id="top">
+        <!-- 로고: 사이즈는 103x29 -->
+        <div id="upper">
+          <div id="logo">
+            <a href="insta.html">
+              <img src="insta_logo.jpg" height="33" alt="" title=""
+            /></a>
+          </div>
+          <!--검색창-->
+          <div id="search">
+            <input type="text" placeholder="검색" />
+          </div>
+          <div id="right">
+            <div id="right_container">
+              <!-- 홈버튼 -->
+              <div id="home">
+                <i class="fas fa-home" style="font-size: 22px;"></i>
+              </div>
+              <!-- 디엠 -->
+              <div id="dm">
+                <i class="far fa-paper-plane" style="font-size: 22px;"></i>
+              </div>
+              <!-- 탐색 -->
+              <div id="compass">
+                <i class="far fa-compass" style="font-size: 22px;"></i>
+              </div>
+              <!-- 따봉 -->
+              <div id="heart">
+                <i class="far fa-heart" style="font-size: 22px;"></i>
+              </div>
+              <!-- 프로필 -->
+              <div id="profile">
+                <img id="picture" src="osy.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
