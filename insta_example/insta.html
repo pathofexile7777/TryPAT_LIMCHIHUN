@@ -3,11 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
     <title>Instagram</title>
   </head>
   <body>
     <header>
       <div class="container">
+        <div id="upper">
+          <div id="logo">
+            <a href="insta.html">
+              <img src="insta_logo.jpg" height="33" alt="" title=""
+            /></a>
+          </div>
+          <!--검색창-->
+          <div id="search">
+            <input type="text" placeholder="검색" />
+          </div>
+          <div id="right">
+            <div id="right_container">
+              <!-- 홈버튼 -->
+              <div id="home">
+                <i class="fas fa-home" style="font-size: 22px"></i>
+              </div>
+              <!-- 디엠 -->
+              <div id="dm">
+                <i class="far fa-paper-plane" style="font-size: 22px"></i>
+              </div>
+              <!-- 탐색 -->
+              <div id="compass">
+                <i class="far fa-compass" style="font-size: 22px"></i>
+              </div>
+              <!-- 따봉 -->
+              <div id="heart">
+                <i class="far fa-heart" style="font-size: 22px"></i>
+              </div>
+              <!-- 프로필 -->
+              <div id="profile">
+                <img id="picture" src="osy.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="profile">
           <div class="profile-image">
             <img src="sang.jpg" alt="" />
@@ -35,10 +76,7 @@
           </div>
 
           <div class="profile-bio">
-            <p>
-              <span class="profile-real-name">Jane Doe</span> Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit 📷✈️🏕️
-            </p>
+            <p><span class="profile-real-name">JISANGGEUN</span> 롤 개못함</p>
           </div>
         </div>
         <!-- End of profile section -->
@@ -50,11 +88,7 @@
       <div class="container">
         <div class="gallery">
           <div class="gallery-item" tabindex="0">
-            <img
-              src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop"
-              class="gallery-image"
-              alt=""
-            />
+            <img src="sang.jpg" class="gallery-image" alt="" />
 
             <div class="gallery-item-info">
               <ul>
