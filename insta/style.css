@@ -5,7 +5,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  /* box-sizing CSS 속성은 요소의 너비와 높이를 계산하는 방법을 지정한다. */
+  box-sizing: content-box;
 }
 
 * {
@@ -31,11 +32,12 @@
 }
 
 #search {
+  flex: 0 1 auto;
   height: 28px;
   width: 215px;
-  padding: 7px;
+  min-width: 125px;
+  padding: 0;
 }
-
 #right {
   height: 22px;
   width: 360px;
@@ -121,8 +123,10 @@ img {
 /* 프로필 사진은 원형에 최대 크기는 가로세로 150px로 */
 .profile-image img {
   border-radius: 50%;
-  max-width: 150px;
-  height: auto; /* max-width를 설정한 후 height를 auto로 해주면 원본 비율에 맞게 크기가 자동으로 조정된다. */
+  width: 150px;
+  height: 150px; /* max-width를 설정한 후 height를 auto로 해주면 원본 비율에 맞게 크기가 자동으로 조정된다. */
+  object-position: top;
+  object-fit: cover;
 }
 
 .profile-user-settings,
@@ -200,6 +204,8 @@ img {
   margin: 1rem;
   color: #fff;
   cursor: pointer;
+  width: 293px;
+  height: 293px;
 }
 
 .gallery-item:hover .gallery-item-info,

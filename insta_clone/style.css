@@ -8,6 +8,16 @@
   border-bottom: 1px solid #dbdbdb;
 }
 
+.fontSize {
+  font-size: 16px;
+}
+
+.searchShape {
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  padding: 3px 10px 3px 26px;
+}
+
 #upper {
   height: 54px;
   display: flex;
@@ -21,9 +31,11 @@
 }
 
 #search {
+  flex: 0 1 auto;
   height: 28px;
   width: 215px;
-  padding: 7px;
+  min-width: 125px;
+  padding: 0;
 }
 
 #right {
@@ -45,4 +57,15 @@
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
+}
+
+#big_picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+
+#main_info {
 }

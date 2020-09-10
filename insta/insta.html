@@ -9,7 +9,8 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
-    <title>Instagram</title>
+
+    <title>Instagram_clone</title>
   </head>
   <body>
     <header>
@@ -17,12 +18,18 @@
         <div id="upper">
           <div id="logo">
             <a href="insta.html">
-              <img src="insta_logo.jpg" height="33" alt="" title=""
+              <img src="insta_logo.jpg" height="29" width="103" alt="" title=""
             /></a>
           </div>
           <!--검색창-->
           <div id="search">
-            <input type="text" placeholder="검색" />
+            <input
+              class="fontSize searchShape"
+              type="text"
+              placeholder="검색"
+              autocapitalize="none"
+            />
+            <div class=""></div>
           </div>
           <div id="right">
             <div id="right_container">
@@ -44,21 +51,23 @@
               </div>
               <!-- 프로필 -->
               <div id="profile">
-                <img id="picture" src="osy.jpg" />
+                <img
+                  id="picture"
+                  src="C:\Users\임치헌\Desktop\photo\profile.jpg"
+                  onclick="picture_click();"
+                />
               </div>
             </div>
           </div>
         </div>
         <div class="profile">
           <div class="profile-image">
-            <img src="sang.jpg" alt="" />
+            <img src="C:\Users\임치헌\Desktop\photo\profile.jpg" alt="" />
           </div>
 
           <div class="profile-user-settings">
-            <h1 class="profile-user-name">sanggeun0117</h1>
-
+            <h1 class="profile-user-name">mary_loves_me</h1>
             <button class="btn profile-edit-btn">Edit Profile</button>
-
             <button
               class="btn profile-settings-btn"
               aria-label="profile settings"
@@ -70,13 +79,13 @@
           <div class="profile-stats">
             <ul>
               <li><span class="profile-stat-count">164</span> posts</li>
-              <li><span class="profile-stat-count">188</span> followers</li>
-              <li><span class="profile-stat-count">206</span> following</li>
+              <li><span class="profile-stat-count">5.9억</span> followers</li>
+              <li><span class="profile-stat-count">1</span> following</li>
             </ul>
           </div>
 
           <div class="profile-bio">
-            <p><span class="profile-real-name">JISANGGEUN</span> 롤 개못함</p>
+            <p><span class="profile-real-name">다람쥐인간</span> yesyesyes</p>
           </div>
         </div>
         <!-- End of profile section -->
@@ -88,25 +97,8 @@
       <div class="container">
         <div class="gallery">
           <div class="gallery-item" tabindex="0">
-            <img src="sang.jpg" class="gallery-image" alt="" />
-
-            <div class="gallery-item-info">
-              <ul>
-                <li class="gallery-item-likes">
-                  <span class="visually-hidden">Likes:</span
-                  ><i class="fas fa-heart" aria-hidden="true"></i> 56
-                </li>
-                <li class="gallery-item-comments">
-                  <span class="visually-hidden">Comments:</span
-                  ><i class="fas fa-comment" aria-hidden="true"></i> 2
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="gallery-item" tabindex="0">
             <img
-              src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\mask_with_hand.jpg"
               class="gallery-image"
               alt=""
             />
@@ -115,11 +107,11 @@
               <ul>
                 <li class="gallery-item-likes">
                   <span class="visually-hidden">Likes:</span
-                  ><i class="fas fa-heart" aria-hidden="true"></i> 89
+                  ><i class="fas fa-heart" aria-hidden="true"></i> 5.6백만
                 </li>
                 <li class="gallery-item-comments">
                   <span class="visually-hidden">Comments:</span
-                  ><i class="fas fa-comment" aria-hidden="true"></i> 5
+                  ><i class="fas fa-comment" aria-hidden="true"></i> 595
                 </li>
               </ul>
             </div>
@@ -127,7 +119,70 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\red.jpg"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fas fa-heart" aria-hidden="true"></i> 8.9백만
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fas fa-comment" aria-hidden="true"></i> 124
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+            <img
+              src="C:\Users\임치헌\Desktop\photo\cute.jpg"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fas fa-heart" aria-hidden="true"></i> 1000만
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fas fa-comment" aria-hidden="true"></i> 633
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+            <img
+              src="C:\Users\임치헌\Desktop\photo\csd.jpg"
+              class="gallery-image"
+              alt=""
+            />
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Likes:</span
+                  ><i class="fas fa-heart" aria-hidden="true"></i> 1036만
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Comments:</span
+                  ><i class="fas fa-comment" aria-hidden="true"></i> 951
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="gallery-item" tabindex="0">
+            <img
+              src="C:\Users\임치헌\Desktop\photo\road.jpg"
               class="gallery-image"
               alt=""
             />
@@ -141,11 +196,11 @@
               <ul>
                 <li class="gallery-item-likes">
                   <span class="visually-hidden">Likes:</span
-                  ><i class="fas fa-heart" aria-hidden="true"></i> 42
+                  ><i class="fas fa-heart" aria-hidden="true"></i> 7.6백만
                 </li>
                 <li class="gallery-item-comments">
                   <span class="visually-hidden">Comments:</span
-                  ><i class="fas fa-comment" aria-hidden="true"></i> 1
+                  ><i class="fas fa-comment" aria-hidden="true"></i> 255
                 </li>
               </ul>
             </div>
@@ -153,7 +208,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\write.jpg"
               class="gallery-image"
               alt=""
             />
@@ -179,7 +234,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\sleep.jpg"
               class="gallery-image"
               alt=""
             />
@@ -205,7 +260,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\run.jpg"
               class="gallery-image"
               alt=""
             />
@@ -226,7 +281,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\omg.jpg"
               class="gallery-image"
               alt=""
             />
@@ -252,7 +307,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\sad.jpg"
               class="gallery-image"
               alt=""
             />
@@ -273,7 +328,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\shine.jpg"
               class="gallery-image"
               alt=""
             />
@@ -299,7 +354,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\emb.jpg"
               class="gallery-image"
               alt=""
             />
@@ -320,7 +375,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\focus.jpg"
               class="gallery-image"
               alt=""
             />
@@ -341,7 +396,7 @@
 
           <div class="gallery-item" tabindex="0">
             <img
-            src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop"
+              src="C:\Users\임치헌\Desktop\photo\beer.jpg"
               class="gallery-image"
               alt=""
             />
@@ -370,6 +425,11 @@
         <div class="loader"></div>
       </div>
       <!-- End of container -->
+      <script type="text/javascript">
+        function picture_click() {
+          alert("click");
+        }
+      </script>
     </main>
   </body>
 </html>

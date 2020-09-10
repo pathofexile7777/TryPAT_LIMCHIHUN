@@ -7,7 +7,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Instagram</title>
+    <title>my_Instagram</title>
     <link rel="stylesheet" href="style.css" />
 
     <!-- 아이콘 가져오는 링크 -->
@@ -31,7 +31,13 @@
           </div>
           <!--검색창-->
           <div id="search">
-            <input type="text" placeholder="검색" />
+            <input
+              class="fontSize searchShape"
+              type="text"
+              placeholder="검색"
+              autocapitalize="none"
+            />
+            <div class=""></div>
           </div>
           <div id="right">
             <div id="right_container">
@@ -53,12 +59,37 @@
               </div>
               <!-- 프로필 -->
               <div id="profile">
-                <img id="picture" src="osy.jpg" />
+                <img
+                  id="picture"
+                  src="C:\Users\임치헌\Desktop\photo\profile.jpg"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
+    <main>
+      <div id="main_info">
+        <div id="big_profile">
+          <img
+            id="big_picture"
+            src="C:\Users\임치헌\Desktop\photo\profile.jpg"
+            alt="I love you"
+          />
+        </div>
+        <div id="my_id">squirrel_human_1227</div>
+        <button id="edit_profile" type="button">프로필 편집</button>
+        <img
+          id="configure"
+          src="C:\Users\임치헌\Desktop\WEB\TryPAT_LIMCHIHUN\insta_clone\gear.jpg"
+          alt="환경설정"
+        />
+        <div id="post">게시물 1234</div>
+        <div id="follower">팔로워 2534만</div>
+        <div id="following">팔로우 4</div>
+        <div id="status_message">yesyesyes</div>
+      </div>
+    </main>
   </body>
 </html>
